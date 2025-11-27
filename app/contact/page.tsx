@@ -36,27 +36,27 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-16">
-      <h1 className="mb-6 text-3xl font-semibold tracking-wide">
+    <div className="mx-auto max-w-3xl px-6 py-16 text-neutral-100">
+      <h1 className="mb-6 text-3xl font-semibold tracking-wide text-white">
         Contact us
       </h1>
-      <p className="mb-8 text-sm text-neutral-300">
+      <p className="mb-8 text-base text-neutral-200">
         工事のご相談・お見積りのご依頼など、お気軽にお問い合わせください。
       </p>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label className="mb-1 block text-sm" htmlFor="name">
+          <label className="mb-1 block text-sm text-neutral-200" htmlFor="name">
             お名前 *
           </label>
           <input
             id="name"
             name="name"
             required
-            className="w-full rounded border border-neutral-700 bg-black px-3 py-2 text-sm focus:border-yellow-400 focus:outline-none"
+            className="w-full rounded border border-neutral-700 bg-neutral-950 px-3 py-2 text-sm text-neutral-100 transition focus:border-yellow-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950"
           />
         </div>
         <div>
-          <label className="mb-1 block text-sm" htmlFor="email">
+          <label className="mb-1 block text-sm text-neutral-200" htmlFor="email">
             メールアドレス *
           </label>
           <input
@@ -64,21 +64,21 @@ export default function ContactPage() {
             name="email"
             type="email"
             required
-            className="w-full rounded border border-neutral-700 bg-black px-3 py-2 text-sm focus:border-yellow-400 focus:outline-none"
+            className="w-full rounded border border-neutral-700 bg-neutral-950 px-3 py-2 text-sm text-neutral-100 transition focus:border-yellow-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950"
           />
         </div>
         <div>
-          <label className="mb-1 block text-sm" htmlFor="phone">
+          <label className="mb-1 block text-sm text-neutral-200" htmlFor="phone">
             お電話番号
           </label>
           <input
             id="phone"
             name="phone"
-            className="w-full rounded border border-neutral-700 bg-black px-3 py-2 text-sm focus:border-yellow-400 focus:outline-none"
+            className="w-full rounded border border-neutral-700 bg-neutral-950 px-3 py-2 text-sm text-neutral-100 transition focus:border-yellow-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950"
           />
         </div>
         <div>
-          <label className="mb-1 block text-sm" htmlFor="message">
+          <label className="mb-1 block text-sm text-neutral-200" htmlFor="message">
             ご相談内容 *
           </label>
           <textarea
@@ -86,13 +86,13 @@ export default function ContactPage() {
             name="message"
             required
             rows={5}
-            className="w-full rounded border border-neutral-700 bg-black px-3 py-2 text-sm focus:border-yellow-400 focus:outline-none"
+            className="w-full rounded border border-neutral-700 bg-neutral-950 px-3 py-2 text-sm text-neutral-100 transition focus:border-yellow-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950"
           />
         </div>
         <button
           type="submit"
           disabled={sending}
-          className="rounded-full bg-yellow-400 px-8 py-3 text-sm font-semibold tracking-wide text-black disabled:opacity-60"
+          className="rounded-full bg-yellow-400 px-8 py-3 text-sm font-semibold tracking-wide text-black shadow-lg transition hover:bg-yellow-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 disabled:opacity-60"
         >
           {sending ? "送信中..." : "送信する"}
         </button>
