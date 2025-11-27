@@ -14,19 +14,19 @@
       </video>
 
       {/* 黒グラデーションのオーバーレイ */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/75 to-black/95" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/85 to-black/95" />
 
       {/* コンテンツ */}
-      <section className="relative z-10 mx-auto flex min-h-[calc(100vh-4rem)] max-w-6xl flex-col justify-center px-6 py-10">
-        <p className="mb-4 text-xs tracking-[0.3em] text-neutral-300">
+      <section className="relative z-10 mx-auto flex min-h-[calc(100vh-4rem)] max-w-6xl flex-col justify-center px-6 py-12 sm:py-16">
+        <p className="mb-4 text-xs tracking-[0.3em] text-neutral-200">
           JAPANESE CRAFTSMANSHIP / GENERAL CONTRACTOR
         </p>
-        <h1 className="mb-6 max-w-3xl text-4xl font-semibold leading-tight tracking-wide text-white md:text-5xl">
+        <h1 className="mb-6 max-w-3xl text-4xl font-semibold leading-tight tracking-wide text-white sm:text-5xl">
           誠実なものづくりで、
           <br />
           都市と暮らしを支える建設会社。
         </h1>
-        <p className="mb-10 max-w-xl text-sm text-neutral-300">
+        <p className="mb-10 max-w-2xl text-base text-neutral-100 sm:text-lg">
           オフィスビル・商業施設・公共工事・住宅リノベーションまで。
           日本の職人による高品質な施工と、安全第一の現場管理で、
           クライアントの信頼に応えます。
@@ -34,13 +34,13 @@
         <div className="flex flex-wrap gap-4">
           <a
             href="/contact"
-            className="rounded-full bg-yellow-400 px-8 py-3 text-sm font-semibold tracking-wide text-black hover:bg-yellow-300 transition"
+            className="rounded-full bg-yellow-400 px-7 py-3 text-sm font-semibold tracking-wide text-black shadow-lg transition hover:bg-yellow-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           >
             お問い合わせ
           </a>
           <a
             href="/company"
-            className="rounded-full border border-neutral-500 px-8 py-3 text-sm font-semibold tracking-wide text-neutral-100 hover:border-yellow-400 hover:text-yellow-400 transition"
+            className="rounded-full border border-neutral-400/60 px-7 py-3 text-sm font-semibold tracking-wide text-neutral-100 transition hover:border-yellow-400 hover:text-yellow-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           >
             会社概要を見る
           </a>

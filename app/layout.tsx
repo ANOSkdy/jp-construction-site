@@ -15,9 +15,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className="bg-black text-neutral-100">
+      <body className="bg-neutral-950 text-neutral-100 antialiased">
+        <a
+          href="#main-content"
+          className="skip-link z-50"
+        >
+          メインコンテンツにスキップ
+        </a>
         <Header />
-        <main className="pt-16 min-h-[calc(100vh-4rem)]">{children}</main>
+        <main
+          id="main-content"
+          className="pt-16 min-h-[calc(100vh-4rem)]"
+        >
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
